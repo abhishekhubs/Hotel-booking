@@ -1,0 +1,54 @@
+# 🏨 Hotel Booking Analysis  
+
+This project is a data analysis exercise using hotel booking and price datasets for five major Indian cities — **Bangalore, Delhi, Hyderabad, Kolkata, and Mumbai** — plus a public dataset from Kaggle.  
+
+The goal is to explore how hotel prices vary by city and star rating, check which cities are the busiest based on customer reviews, and visualize different price and demand patterns.  
+
+---
+
+## 📂 Dataset  
+- Your local datasets: `bangalore.csv`, `delhi.csv`, `hyderabad.csv`, `kolkata.csv`, `mumbai.csv`  
+- Public dataset from Kaggle: [Hotel Price Data of Cities in India (MakeMyTrip)](https://www.kaggle.com/datasets/andrewgeorgeissac/hotel-price-data-of-cities-in-india-makemytrip)  
+
+Each dataset contains:  
+- **Hotel Name** – name of the hotel  
+- **Rating & Reviews** – customer ratings and number of reviews  
+- **Star Rating** – proxy for room type (1★ = Single, 2★ = Double, 3★ = Deluxe, 4★/5★ = Suite)  
+- **Location Info** – landmark and distance from city center  
+- **Price** – room price (with tax info)  
+
+---
+
+## 🔍 Analysis Performed  
+
+1. **Average Price by City & Room Type (Star Rating)**  
+   - Compared how hotel prices differ across cities and star categories.  
+
+2. **Busiest Cities**  
+   - Ranked cities by the total number of reviews (used as a proxy for demand).  
+
+3. **Top Hotels**  
+   - Listed the top 10 hotels in each city with the highest reviews.  
+
+4. **Visual Insights**  
+   - **Bar Chart:** Average price by star rating per city  
+   - **Scatter Plot:** Price vs. number of reviews (demand vs. cost)  
+   - **Histogram:** Price distribution of hotels in each city  
+   - **Boxplot:** Spread of hotel prices by city  
+   - **Scatter Plot:** Star rating vs. price comparison  
+
+---
+
+## 📊 Sample Insights  
+
+- Mumbai and Delhi generally show higher hotel prices compared to other cities.  
+- Budget hotels (1★ & 2★) tend to cluster around ₹1500–₹2500, while premium suites go beyond ₹7000+.  
+- Cities with the most reviews (Delhi, Mumbai) can be considered the busiest markets.  
+
+---
+
+## 🚀 How to Run  
+
+1. Install required libraries:  
+   ```bash
+   pip install pandas matplotlib
